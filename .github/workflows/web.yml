@@ -1,7 +1,7 @@
 name: My fist work flow
 on:
      push:
-          branch:
+          branches:
                - main
      workflow_dispatch:
 
