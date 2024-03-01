@@ -1,13 +1,16 @@
-name: My fist work flow
+name: My first workflow
+
 on:
-     push:
-          branches:
-               - main
-     workflow_dispatch:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
-     job-web_dev:
-          runs-on: ubnutu-latest
-          steps:
-               - uses: actions/checkout@v3
-               - run: echo "hello world"
+  job-web:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Print message
+        run: echo "hello world"
