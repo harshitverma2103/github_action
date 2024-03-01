@@ -6,7 +6,7 @@ on:
      workflow_dispatch:
 
 jobs:
-     job-web:
+     job-web_dev:
           runs-on: ubnutu-latest
           steps:
                - uses: actions/checkout@v3
