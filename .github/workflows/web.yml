@@ -1,0 +1,13 @@
+name: My fist work flow
+on:
+     push:
+          branch:
+               - main
+     workflow_dispatch:
+
+jobs:
+     job-web:
+          runs-on: ubnutu-latest
+          steps:
+               - uses: actions/checkout@v3
+               - run: echo "hello world"
